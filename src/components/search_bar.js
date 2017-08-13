@@ -5,21 +5,29 @@ import React, { Component } from 'react';
 // class base conponent
 class SearchBar extends Component {
   constructor(props) {
+    console.log(props)
     super(props);
 
-    this.state = { term: 'sss' };
+    this.state = { term: '' };
   }
 
     render() {
       return(
-        <div>
+        <div className="search_bar">
           <input
+            className="search_bar_input"
             value={this.state.term}
-            onChange={event => this.setState({ term: event.target.value })} />
+            onChange={event => this.onInputChange(event.target.value)} />
         </div>
       );
     }
-ss
+
+    onInputChange(term) {
+      this.setState({term});
+      this.props.onSearchTermChange(term);
+    }
+
+
 }
 
 // SearchBarを出力する

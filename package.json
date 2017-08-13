@@ -22,6 +22,7 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
+    "redux-devtools": "^3.4.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
@@ -30,9 +31,9 @@
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-redux": "4.3.0",
+    "react-redux": "^4.3.0",
     "react-router": "^2.0.1",
-    "redux": "^3.0.4",
+    "redux": "^3.7.2",
     "youtube-api-search": "0.0.5"
   }
 }
